@@ -340,5 +340,5 @@ echo "Your external IPv4 addr: $wanip"
 echo "Installation log: ~/cryptocurrency_masternode_installation.log"
 echo "Cryptocurrency Core datadir: "$(echo $HOME/.cryptocurrency/)""
 echo ""
-echo -e "Need additional help? Please visit Cryptocurrency Discord channel"{NC}
+echo -e "Need additional help? Please visit Cryptocurrency Discord channel${NC}"
 echo ""
