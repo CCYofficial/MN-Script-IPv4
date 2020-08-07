@@ -70,13 +70,13 @@ read wan
 					cd /usr/bin &&
 					sudo rm -fr cryptocurrency-cli cryptocurrencyd &&
 					cd ~ &&
-					sudo rm -fr cryptocurrency-cli cryptocurrencyd cryptocurrency-tx cryptocurrency.ubuntu18.04.zip &&
+					sudo rm -fr cryptocurrency-cli cryptocurrencyd cryptocurrency-tx cryptocurrency.linux.zip &&
 					echo -e "${GREEN}2/5 Old Cryptocurrency wallet is deleted${NC}" &&
-					wget https://github.com/CCYofficial/CCY/releases/latest/download/cryptocurrency.ubuntu18.04.zip &&
+					wget https://github.com/CCYofficial/CCY/releases/latest/download/cryptocurrency.linux.zip &&
 					echo -e "${GREEN}3/5 Cryptocurrency wallet is downloaded${NC}" &&
 					unzip -o cryptocurrency*.zip &&
 					sudo cp -fr cryptocurrency-cli cryptocurrencyd /usr/bin/ &&
-					sudo rm -fr cryptocurrency-cli cryptocurrencyd cryptocurrency-tx cryptocurrency-qt cryptocurrency.ubuntu18.04.zip &&
+					sudo rm -fr cryptocurrency-cli cryptocurrencyd cryptocurrency-tx cryptocurrency-qt cryptocurrency.linux.zip &&
 					cd /usr/bin &&
 					chmod -R 755 cryptocurrency-cli cryptocurrencyd &&
 					cd ~ &&
@@ -108,13 +108,13 @@ read wan
 					cd /usr/bin &&
 					sudo rm -fr cryptocurrency-cli cryptocurrencyd &&
 					cd ~ &&
-					sudo rm -fr cryptocurrency-cli cryptocurrencyd cryptocurrency-tx cryptocurrency.ubuntu16.04.zip &&
+					sudo rm -fr cryptocurrency-cli cryptocurrencyd cryptocurrency-tx cryptocurrency.linux.zip &&
 					echo -e "${GREEN}2/5 Old Cryptocurrency wallet is deleted${NC}" &&
-					wget https://github.com/CCYofficial/CCY/releases/latest/download/cryptocurrency.ubuntu16.04.zip &&
+					wget https://github.com/CCYofficial/CCY/releases/latest/download/cryptocurrency.linux.zip &&
 					echo -e "${GREEN}3/5 Cryptocurrency wallet is downloaded${NC}" &&
 					unzip -o cryptocurrency*.zip &&
 					sudo cp -fr cryptocurrency-cli cryptocurrencyd /usr/bin/ &&
-					sudo rm -fr cryptocurrency-cli cryptocurrencyd cryptocurrency-tx cryptocurrency-qt cryptocurrency.ubuntu16.04.zip &&
+					sudo rm -fr cryptocurrency-cli cryptocurrencyd cryptocurrency-tx cryptocurrency-qt cryptocurrency.linux.zip &&
 					cd /usr/bin &&
 					chmod -R 755 cryptocurrency-cli cryptocurrencyd &&
 					cd ~ &&
@@ -173,17 +173,17 @@ sudo rm -fr cryptocurrency*.zip
 sudo rm -R -fr cryptocurrency.ubuntu18.04
 
             if [ "$OS_version" -eq "1" ]; then
-                wget https://github.com/CCYofficial/CCY/releases/latest/download/cryptocurrency.ubuntu18.04.zip
+                wget https://github.com/CCYofficial/CCY/releases/latest/download/cryptocurrency.linux.zip
 		if [ $? -ne "0" ]; then echo "Failed to download cryptocurrencyd binary" && exit 1; fi
             elif [ "$OS_version2" -eq "1" ]; then
-                wget https://github.com/CCYofficial/CCY/releases/latest/download/cryptocurrency.ubuntu16.04.zip
+                wget https://github.com/CCYofficial/CCY/releases/latest/download/cryptocurrency.linux.zip
 		if [ $? -ne "0" ]; then echo "Failed to download cryptocurrencyd binary" && exit 1; fi
             fi
 # Manage coin daemon and configuration //
 unzip -o cryptocurrency*.zip
 echo ""
 sudo cp -fr cryptocurrency-cli cryptocurrencyd /usr/bin/
-sudo rm -fr cryptocurrency-cli cryptocurrencyd cryptocurrency-tx cryptocurrency-qt cryptocurrency.ubuntu18.04.zip cryptocurrency.ubuntu16.04.zip
+sudo rm -fr cryptocurrency-cli cryptocurrencyd cryptocurrency-tx cryptocurrency-qt cryptocurrency.linux.zip
 cd /usr/bin
 chmod -R 755 cryptocurrency-cli cryptocurrencyd
 cd ~
