@@ -170,7 +170,7 @@ cd ~/.cryptocurrency
 sudo rm -R -fr database .lock peers.dat blocks db.log masternode.conf cryptocurrency.conf zerocoin budget.dat debug.log mncache.dat cryptocurrencyd.pid chainstate fee_estimates.dat mnpayments.dat sporks
 cd ~
 sudo rm -fr cryptocurrency*.zip
-sudo rm -R -fr cryptocurrency.ubuntu18.04
+sudo rm -R -fr cryptocurrency.linux.zip
 
             if [ "$OS_version" -eq "1" ]; then
                 wget https://github.com/CCYofficial/CCY/releases/latest/download/cryptocurrency.linux.zip
